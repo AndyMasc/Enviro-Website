@@ -4,10 +4,8 @@ body {
 
 .navbar {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: start;
     position: fixed;
-    height: 50px;
     top: 25px;
     z-index: 1;
     box-sizing: border-box;
@@ -16,11 +14,41 @@ body {
     left: 50%;
     transform: translateX(-50%);
     padding: 0 2rem;
+    transition: all 0.4s ease-in-out;
+    width: 30%;
+    height: 55px;
+    flex-direction: column;
+    overflow: hidden;
+}
+.navbar:hover {
+    width: 70%;
+    height: 90px;
+}
+
+.hovertext {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+    top: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.navbar:hover .hovertext {
+    visibility: visible;
+    opacity: 1;
+    border-radius: 5px;
+    font-family: "Merriweather", sans-serif;
+    font-size: 14px;
+    color: black;
+    white-space: nowrap;
+    font-weight: bold;
 }
 
 .navbar ul {
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
     list-style-type: none;
     gap: 61px;
@@ -36,7 +64,7 @@ body {
     text-decoration: none;
     padding: 8px;
     border-radius: 10rem;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
     line-height: 1;
     vertical-align: middle;
 }
@@ -82,10 +110,15 @@ p {
     border-radius: 10px;
     color: white;
     padding: 12px 24px;
-    background-color: rgba(41, 55, 11, 0.37);
+    background-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
     width: fit-content;
     margin-top: 20px;
     cursor: pointer;
     border: solid grey;
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
