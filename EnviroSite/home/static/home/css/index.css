@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 50px;
+    top: 25px;
+    z-index: 1;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.27);
+    border-radius: 10rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 2rem;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 61px;
+    width: 100%;
+    flex: 1;
+    padding: 0;
+}
+
+.navbar ul li a {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 10rem;
+    transition: background-color 0.3s ease;
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.93);
+}
+
+h1 {
+    font-family: Merriweather;
+    font-size: 58px;
+    color: white;
+}
+
+.hero-section {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    background-image: url('/static/home/heroimg.jpg');
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.hero-text {
+    display: flex;
+    width: 45%;
+    margin: 0 0 0 10%;
+    flex-direction: column;
+}
+
+p {
+    font-family: Merriweather;
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.hero-button {
+    font-family: "Merriweather", sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 24px;
+    background-color: rgba(41, 55, 11, 0.37);
+    text-decoration: none;
+    width: fit-content;
+    margin-top: 20px;
+    cursor: pointer;
+    border: solid grey;
+}
