@@ -9,9 +9,9 @@
     <div class="navbar">
         <ul>
             <li><a href="{% url 'home:about' %}"> About </a></li>
-            <li><a href="{% url 'home:what_is_it' %}"> What is Climate Change? </a></li>
-            <li><a href="#partners"> The Issue </a></li>
-            <li><a href="#a"> Solutions </a></li>
+            <li><a href="{% url 'home:what_is_it' %}"> What is Climate Change </a></li>
+            <li><a href="{% url 'home:issue' %}"> The Issue </a></li>
+            <li><a href="{% url 'home:solutions' %}"> Solutions </a></li>
         </ul>
         <span class="hovertext"> "Earth provides enough to satisfy every man's need, but not every man's greed" - Mahatma Gandhi </span>
     </div>
@@ -19,7 +19,18 @@
         <div class="hero-text">
             <h1> Wonders Beyond Words. Landscapes Beyond Imagination. </h1>
             <p> Our marvellous planet - our home - needs our help. </p>
-            <a class="hero-button" href="#about">Learn how to protect it</a>
+            <a class="hero-button" href="{% url 'home:solutions' %}">Learn how to protect it</a>
+            <div class="trust-badges">
+                <p style="max-width:100%; color:white;">
+                    Built with experts.
+                </p>
+                <div class="trust-logos">
+                    <h2> NIWA </h2>
+                    <h2 style="line-height:0;"> Naylor Palmer </h2>
+                    <h2> Ministry for the Environment</h2>
+                    <h2> Department of Conservation </h2>
+                </div>
+            </div>
         </div>
     </div>
 {% endblock %}

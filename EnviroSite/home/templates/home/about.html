@@ -8,11 +8,12 @@
 {% block content %}
     <div class="navbar">
         <ul>
-            <li><a href="{% url 'home:index' %}"> Home </a></li>
-            <li><a href="#features"> Features </a></li>
-            <li><a href="#partners"> Partners </a></li>
+            <li><a href="{% url 'home:index' %}">Home</a></li>
+            <li><a href="{% url 'home:what_is_it' %}"> What is Climate Change </a></li>
+            <li><a href="{% url 'home:issue' %}"> The Issue </a></li>
+            <li><a href="{% url 'home:solutions' %}"> Solutions </a></li>
         </ul>
-        <span class="hovertext"> "Nature does not hurry, yet everything is accomplished" - Lao Tzu </span>
+        <span class="hovertext"> "Adopt the pace of nature: her secret is patience" - Ralph Waldo Emerson </span>
     </div>
     <div class="hero-section">
         <div class="hero-text">
@@ -20,5 +21,13 @@
             <p class="about-me-description">A year 11 student at Sacred Heart College. </p>
         </div>
         <img src="{% static 'home/aboutme.jpg' %}" alt="Andy Mascarenhas Picture" style="height:60vh; border-radius:5rem; margin:0 auto;">
+    </div>
+    <div class="content-section" style="background-color:#323d01;">
+        <h1> About Me </h1>
+        <p> I’m Andy — a student and programmer passionate about designing practical, affordable technology. From building 3D-printed prosthetic hands to coding embedded systems and AI-powered tools, I focus on creating solutions that blend innovation with impact. This portfolio showcases my projects, experiments, and ideas that bridge hardware, software, and human purpose. </p>
+    </div>
+    <div class="content-section" style="background-color:beige;">
+        <h1 style="color:#323d01;"> My Catholic Perspective </h1>
+        <p style="color:#323d01">As a Catholic and New Zealander, I believe caring for creation is part of our duty to God. Pope Benedict XVI called Earth our “common home,” and Pope Francis in Laudato Si reminds us that protecting it is a moral act. Climate change matters to me because our environment is a gift from God, and we’re called to protect it for future generations.</p>
     </div>
 {% endblock %}

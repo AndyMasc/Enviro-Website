@@ -10,3 +10,9 @@ def about(request):
 
 def what_is_it(request):
     return render(request, 'home/whatisCC.html')
+
+def issue(request):
+    return render(request, 'home/issue.html')
+
+def solutions(request):
+    return render(request, 'home/solutions.html')

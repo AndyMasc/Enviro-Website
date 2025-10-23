@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="navbar">
+        <ul>
+            <li><a href="{% url 'home:index' %}">Home</a></li>
+            <li><a href="{% url 'home:about' %}"> About </a></li>
+            <li><a href="{% url 'home:what_is_it' %}"> What is Climate Change </a></li>
+            <li><a href="{% url 'home:issue' %}"> The Issue </a></li>
+        </ul>
+        <span class="hovertext"> "Nature does not hurry, yet everything is accomplished" - Lao Tzu </span>
+    </div>
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1> The Solutions to Climate Change </h1>
+            <p class="about-me-description">Every problem has a solution...Right? </p>
+        </div>
+    </div>
+    <div class="content-section" style="background-color:#323d01;">
+        <h1> The Positive Impacts </h1>
+        <p>While the negative impacts of climate change far outweigh any positives, some potential positive effects include increased vegetation in certain areas due to higher \(CO_{2}\) levels and warmer temperatures, such as in some northern latitudes and the Amazon rainforest. However, these potential benefits are often localized and accompanied by significant negative consequences like increased droughts and wildfires, making them unlikely to offset the overall global harm.</p>
+    </div>
+    <div class="content-section" style="background-color:beige;">
+        <h1 style="color:#323d01;"> What's Required </h1>
+        <p style="color:#323d01;">Governments must reduce greenhouse gas emissions through policies like carbon taxes and regulations, and invest in green infrastructure and technologies such as renewable energy and public transport. They also need to implement adaptation strategies to manage current and future impacts, such as developing flood defenses and drought-resistant crops, and must set clear, long-term targets and emissions budgets to guide their climate plans.</p>
+    </div>
+    <div class="content-section" style="background-color:#323d01;">
+        <h1 style="color:beige;"> The Solution?</h1>
+        <div style="display: flex; align-items: center; justify-content: space-between; flex-direction: row; padding:5rem;">
+            <p style="text-align:justify; max-width: 45%;"> Humans are the solution to climate change because they are also the cause and can implement solutions to reverse the damage. Key human-led solutions include transitioning to renewable energy sources, improving energy efficiency, developing technologies for carbon capture, and engaging in natural solutions like reforestation and protecting ecosystems.</p>
+            <img style="border-radius:1rem; width:45%;" src="https://media.istockphoto.com/id/155097842/photo/hands-cradling-mother-earth-against-starfield-background.jpg?s=612x612&w=0&k=20&c=0gsqH0tiVEQOk8NeN5YvMI1_HFVqniracUIoLX8cLAA=">
+        </div>
+    </div>
+{% endblock %}

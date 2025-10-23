@@ -63,6 +63,9 @@ body {
     line-height: 1;
     vertical-align: middle;
 }
+.navbar ul li a:active {
+    background-color: grey;
+}
 
 .navbar ul li a:hover {
     background-color: rgba(255, 255, 255, 0.93);
@@ -142,4 +145,35 @@ h3 {
 }
 .tvmheader {
     color: black;
+}
+
+.trust-badges {
+    display: grid;
+    grid-template-rows: auto auto;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+}
+
+.trust-badges p {
+    justify-self: start;
+    font-size: 17px;
+    color: white;
+}
+
+.trust-logos {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 48px;
+}
+.trust-logos h2 {
+    color: white;
+}
+
+.trust-logos h1 {
+    font-size: 32px;
+    font-weight: 550;
+    color: beige;
+    font-family: "Inter", sans-serif;
 }

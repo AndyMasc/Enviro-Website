@@ -8,16 +8,16 @@
 {% block content %}
     <div class="navbar">
         <ul>
+            <li><a href="{% url 'home:index' %}">Home</a></li>
             <li><a href="{% url 'home:about' %}"> About </a></li>
-            <li><a href="#features"> What is Climate Change? </a></li>
-            <li><a href="#partners"> The Issue </a></li>
-            <li><a href="#a"> Solutions </a></li>
+            <li><a href="{% url 'home:issue' %}"> The Issue </a></li>
+            <li><a href="{% url 'home:solutions' %}"> Solutions </a></li>
         </ul>
-        <span class="hovertext"> "Earth provides enough to satisfy every man's need, but not every man's greed" - Mahatma Gandhi </span>
+        <span class="hovertext"> "We are entering a period of consequences" - Al Gore </span>
     </div>
     <div class="hero-section">
-        <div class="hero-text" style="width:100%; justify-content: center; align-items: center; position:absolute; margin:0;">
-            <h1 style="font-size:70px;"> What is Climate Change </h1>
+        <div class="hero-text">
+            <h1> What is Climate Change </h1>
             <p> The Truths. The Myths. And Everything in Between.  </p>
         </div>
     </div>
