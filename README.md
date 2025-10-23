@@ -19,7 +19,7 @@ The site emphasizes:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/environmental-site.git
+   git clone https://github.com/AndyMasc/Enviro-Website.git
    cd environmental-site
 2. **Set up virtual env**
    ```bash
