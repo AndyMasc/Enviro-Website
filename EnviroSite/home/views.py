@@ -7,3 +7,6 @@ def index(request):
 
 def about(request):
     return render(request, 'home/about.html')
+
+def what_is_it(request):
+    return render(request, 'home/whatisCC.html')

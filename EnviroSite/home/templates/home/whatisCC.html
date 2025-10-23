@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'home/css/index.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="navbar">
+        <ul>
+            <li><a href="{% url 'home:about' %}"> About </a></li>
+            <li><a href="#features"> What is Climate Change? </a></li>
+            <li><a href="#partners"> The Issue </a></li>
+            <li><a href="#a"> Solutions </a></li>
+        </ul>
+        <span class="hovertext"> "Earth provides enough to satisfy every man's need, but not every man's greed" - Mahatma Gandhi </span>
+    </div>
+    <div class="hero-section">
+        <div class="hero-text" style="width:100%; justify-content: center; align-items: center; position:absolute; margin:0;">
+            <h1 style="font-size:70px;"> What is Climate Change </h1>
+            <p> The Truths. The Myths. And Everything in Between.  </p>
+        </div>
+    </div>
+    <div class="content-section" style="background-color:#323d01;">
+        <h1> Climate Change </h1>
+        <p> "A change in global or regional climate patterns, in particular a change apparent from the mid to late 20th century onwards and attributed largely to the increased levels of atmospheric carbon dioxide produced by the use of fossil fuels." </p>
+        <h2 style="font-size: 30px;"> - Oxford Dictionary - </h2>
+    </div>
+    <div class="content-section" style="background-color:beige;">
+        <h1 style="color:#323d01"> Truths vs Myths </h1>
+        <div class="truthVmyth" style="display:grid; grid-template-columns: 1fr 1fr; place-items: center;">
+            <h3> <span style="color:#077907;"> Climate change is happening: </span> <br><br> Global surface temperatures have risen by about 1.2°C since the late 19th century, as verified by NASA, NOAA, and the IPCC. Glaciers are retreating, sea levels are rising, and extreme weather events are increasing. </h3>
+            <h3> <span style="color:#940505;"> Climate change is natural:</span> <br><br> While Earth’s climate has always fluctuated, the current rate and scale of warming cannot be explained by natural factors alone (e.g., solar activity, volcanic eruptions). Models that exclude human greenhouse gas emissions fail to reproduce observed warming trends. </h3>
+
+            <h3> <span style="color:#077907;"> Carbon dioxide is the main driver of recent warming: </span> <br><br> CO₂ concentrations are now over 420 ppm, the highest in at least 800,000 years. Its radiative forcing (the heat-trapping effect) is well understood in physics. </h3>
+            <h3> <span style="color:#940505;;"> CO₂ is a tiny part of the atmosphere, so it can’t make a difference: </span> <br><br> Even trace gases can have powerful effects—just as a small concentration of ozone blocks harmful UV radiation. CO₂’s role in trapping infrared radiation is well-documented since the 19th century. </h3>
+        </div>
+    </div>
+    <div class="content-section" style="background-color:#323d01;">
+        <h1 style="color:beige"> The Doomsday Narrative </h1>
+        <p> The "doomsday narrative" for climate change portrays catastrophic outcomes like civilization collapse and irreversible environmental destruction, sometimes fueled by extreme emissions scenarios or the concept of "tipping points". Critics argue this narrative can be misleading and socially destructive, while others see it as the most empirically accurate way to communicate the urgency and severity of the crisis, potentially leading to overwhelm rather than action. </p>
+    </div>
+    <div class="content-section" style="background-color:beige;">
+            <h1 style="color:#323d01;"> The Evidence </h1>
+        <img src="https://scitechdaily.com/images/2022-Global-Temperature-Anomaly-Chart.gif" alt="graph gif" style="width:70vw; border-radius:1rem;">
+    </div>
+    <div class="content-section" style="background-color:#323d01;">
+        <h1 style="color:beige"> My Take </h1>
+        <p> Climate change is a real issue. But the idea of a doomsday shouldnt scare us. Instead, we should work hard to make sure that's a future that's only fictitious.</p>
+    </div>
+{% endblock %}
