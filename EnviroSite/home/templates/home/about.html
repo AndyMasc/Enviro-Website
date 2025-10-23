@@ -8,17 +8,17 @@
 {% block content %}
     <div class="navbar">
         <ul>
-            <li><a href="#about"> About </a></li>
+            <li><a href="{% url 'home:index' %}"> Home </a></li>
             <li><a href="#features"> Features </a></li>
             <li><a href="#partners"> Partners </a></li>
         </ul>
-        <span class="hovertext"> "Earth provides enough to satisfy every man's need, but not every man's greed." - Mahatma Gandhi </span>
+        <span class="hovertext"> "Nature does not hurry, yet everything is accomplished" - Lao Tzu </span>
     </div>
     <div class="hero-section">
         <div class="hero-text">
             <h1> Andy Mascarenhas </h1>
-            <p> A year 11 student at Sacred Heart College. </p>
+            <p class="about-me-description">A year 11 student at Sacred Heart College. </p>
         </div>
-        <img src="{% static 'home/aboutme.jpg' %}" alt="Andy Mascarenhas Picture" style="height:50vh; border-radius:5rem; margin:0 auto;">
+        <img src="{% static 'home/aboutme.jpg' %}" alt="Andy Mascarenhas Picture" style="height:60vh; border-radius:5rem; margin:0 auto;">
     </div>
 {% endblock %}
